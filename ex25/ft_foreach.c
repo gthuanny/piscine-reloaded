@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 10:17:48 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/10 09:16:38 by gde-cast         ###   ########.fr       */
+/*   Created: 2025/10/09 12:13:08 by gde-cast          #+#    #+#             */
+/*   Updated: 2025/10/09 12:13:13 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdio.h>
 
-void	ft_print_alphabet(void)
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	char	c;
+	int	i;
 
-	c = 'a';
-	while (c <= 'z')
+	i = 0;
+	while (i < length)
 	{
-		ft_putchar(c);
-		c++;
+		f(tab[i]);
+		i++;
 	}
 }

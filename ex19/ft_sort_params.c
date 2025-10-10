@@ -6,17 +6,19 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:21:53 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/09 10:21:55 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/10 09:36:09 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putchar(char c);
+
+/*void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-
+*/
 int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 == *s2 && *s1 != '\0' && *s2 != '\0')

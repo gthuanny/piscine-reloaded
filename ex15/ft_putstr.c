@@ -6,24 +6,20 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:20:44 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/09 10:20:46 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/10 09:22:44 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	int	len;
+	int	i;
 
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	write (1, str, len);
+	i = 0;
+	while (*(str + i) != '\0')
+	{
+		ft_putchar(*(str + i));
+		i++;
+	}
 }
-
-/*int main(void)
-{
-	ft_putstr("Ola Gaby");
-	return (0);
-}*/

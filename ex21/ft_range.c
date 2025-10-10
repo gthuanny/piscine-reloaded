@@ -6,11 +6,9 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:30:37 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/09 10:30:39 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/09 10:33:44 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>

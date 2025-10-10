@@ -6,20 +6,20 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:21:35 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/09 10:21:38 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/10 09:24:21 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void	ft_putstr(char *str)
+void	print_str(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
 }
@@ -31,8 +31,9 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		ft_putstr(argv[i]);
-		ft_putstr("\n");
+		print_str(argv[i]);
+		ft_putchar('\n');
 		i++;
 	}
+	return (0);
 }
